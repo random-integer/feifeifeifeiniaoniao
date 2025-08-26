@@ -29,6 +29,7 @@ public class LogicScript : MonoBehaviour
     public void GameOver()
     {
         gameOverScreen.SetActive(true);
+        scoreText.color = Color.white;
     }
     public void Restart()
     {
