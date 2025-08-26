@@ -3,14 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class LogicScript : MonoBehaviour
 {
-    public int playerScore = 0;
+    public int playerScore;
     public TMPro.TMP_Text scoreText;
 
     public GameObject gameOverScreen;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        playerScore = 0;
     }
 
     // Update is called once per frame

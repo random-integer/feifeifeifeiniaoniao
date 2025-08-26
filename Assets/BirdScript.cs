@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class birdscript : MonoBehaviour
+public class BirdScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
 
@@ -33,7 +33,12 @@ public class birdscript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        logic.GameOver();
+        Die();
+    }
+
+    public void Die()
+    {
         dead = true;
+        logic.GameOver();
     }
 }

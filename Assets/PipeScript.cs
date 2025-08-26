@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class pipescript : MonoBehaviour
+public class PipeScript : MonoBehaviour
 {
     public float moveSpeed = 5;
 
